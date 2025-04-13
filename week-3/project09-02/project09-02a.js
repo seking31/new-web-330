@@ -37,4 +37,8 @@ function showData(event) {
   location.href = "project09-02b.html";
 }
 
-<button type="submit" onclick="showData(event)">Submit</button>
+document.addEventListener("DOMContentLoaded", () => {
+  const submitButton = document.getElementById("submitButton");
+
+  submitButton.addEventListener("click", (event) => showData(event));
+});
