@@ -3,9 +3,64 @@
   Chapter 2
   Programming Assignment
 
-  Author:
-  Date:
-  Filename:
+  Author: Sara King
+  Date: April 20, 2025
+  Filename: styles.css
 */
 
 /* Add your CSS styles here */
+
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+input {
+  padding: 8px;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #e30c74;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #f0bbee;
+  color: #e30c74
+}
+
+#message {
+  text-align: center;
+}

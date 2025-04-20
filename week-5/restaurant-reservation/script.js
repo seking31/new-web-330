@@ -3,24 +3,47 @@
   Chapter 2
   Programming Assignment
 
-  Author:
-  Date:
-  Filename:
+  Author: Sara King
+  Date: April 20, 2025
+  Filename: script.js
 */
 
-// Create an in-memory object array for each table in the restaurant
-let tables = [
-  // Add your table objects here
+const tables = [
+  { tableNumber: 1, capacity: 4, isReserved: false },
+  { tableNumber: 2, capacity: 2, isReserved: false },
+  { tableNumber: 3, capacity: 6, isReserved: false },
+  { tableNumber: 4, capacity: 4, isReserved: false },
 ];
 
-// Create a function reserveTable
 function reserveTable(tableNumber, callback, time) {
-  // Add your code here
+  const table = tables.find((t) => t.tableNumber === tableNumber);
+
+  if (table && !table.isReserved) {
+    table.isReserved = true;
+
+    setTimeout(() => {
+      callback(`Table ${tableNumber} reserved successfully!`);
+    }, time);
+  } else {
+    callback(`Error: Table ${tableNumber} is already reserved.`);
+  }
 }
 
-// When the form is submitted, call the reserveTable function
 document
-  .getElementById("reservationForm")
-  .addEventListener("submit", function (e) {
-    // Add your code here
+  .getElementById('reservationForm')
+  .addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const tableNumber = Number.parseInt(
+      document.getElementById('tableNumber').value
+    );
+
+    reserveTable(
+      tableNumber,
+      (message) => {
+        document.getElementById('message').textContent = `${name}, ${message}`;
+      },
+      2000
+    );
   });
