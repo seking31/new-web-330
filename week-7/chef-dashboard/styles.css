@@ -3,9 +3,32 @@
   Chapter 3
   Programming Assignment
 
-  Author:
-  Date:
-  Filename:
+    Author: Sara King Date: May 4,
+    2025
+  Filename: styles.css
 */
 
 /* Add your CSS styles here */
+body {
+  background: palevioletred;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.chef-container {
+  color: blue;
+  width: 100%;
+  background: peachpuff;
+  border-radius: 0.75rem;
+  border: 1px solid darkslategray;
+  padding: 1.5rem 2rem;
+}
+
+#error {
+  color: red;
+  font-weight: 600;
+  width: 100%;
+}
