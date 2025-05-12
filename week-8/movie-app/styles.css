@@ -3,9 +3,59 @@
   Chapter 4
   Programming Assignment
 
-  Author:
-  Date:
-  Filename:
+  Author: Sara King
+  Date: May 12, 2025
+  Filename: styles.css
 */
 
 /* Add your styles here */
+
+/*
+  Pragmatic JavaScript
+  Chapter 3
+  Programming Assignment
+
+    Author: Sara King Date: May 4,
+    2025
+  Filename: styles.css
+*/
+
+/* Add your CSS styles here */
+body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: blue;
+}
+
+.form-container {
+  background-color: blue;
+  color: whitesmoke;
+  width: 100%;
+  border: 4px solid darkslategray;
+  padding: 1.5rem 2rem;
+}
+
+#error-message {
+  color: red;
+  font-weight: 600;
+  width: 100%;
+}
+
+button {
+  background-color: plum;
+  color: blue;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+}
+
+input {
+  background-color: plum;
+  color: blue;
+  height: 35px;
+}
